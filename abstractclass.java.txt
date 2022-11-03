@@ -1,0 +1,30 @@
+import java.util.*; 
+abstract class animal
+{
+    public abstract void hello(); 
+    void hi()
+    {
+        System.out.println("HI"); 
+    }
+}
+class dog extends animal
+{
+    public void hello()
+    {
+        System.out.println("HELLO");
+    }
+    void hmm()
+    {
+        System.out.println("HMM");
+    }
+}
+class Main 
+{
+    public static void main(String args[])
+    {
+        dog d=new dog(); 
+        d.hello(); 
+        d.hi(); 
+        d.hmm();
+    }
+}
